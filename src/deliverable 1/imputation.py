@@ -7,7 +7,7 @@ from sklearn.experimental import enable_iterative_imputer  # noqa: F401
 from sklearn.impute import IterativeImputer, KNNImputer
 
 try:
-    from src.data_loading import RANDOM_STATE
+    from src import RANDOM_STATE
 except ImportError:
     from data_loading import RANDOM_STATE
 

@@ -12,16 +12,16 @@ from sklearn.svm import LinearSVC
 
 
 try:
-    from src.data_loading import load_datasets, RANDOM_STATE, DEFAULT_DATA_DIR
-    from src.eda import (
+    from src import load_datasets, RANDOM_STATE, DEFAULT_DATA_DIR
+    from src import (
         missing_table_direct,
         plot_class_imbalance,
         plot_usage_heatmap,
         plot_numeric_histograms,
         plot_numeric_correlation,
     )
-    from src.timeseries import build_monthly_timeseries, plot_monthly_timeseries, evaluate_forecasting_baselines
-    from src.preprocessing import (
+    from src import build_monthly_timeseries, plot_monthly_timeseries, evaluate_forecasting_baselines
+    from src import (
         normalize_environment,
         join_datasets,
         drop_unnecessary_columns,
@@ -29,9 +29,9 @@ try:
         split_train_test,
         detect_columns_by_type,
     )
-    from src.imputation import get_imputation_strategies
-    from src.modeling import evaluate_imputation, evaluate_multiclass_strategies
-    from src.sampling import get_sampling_strategies, evaluate_sampling
+    from src import get_imputation_strategies
+    from src import evaluate_imputation, evaluate_multiclass_strategies
+    from src import get_sampling_strategies, evaluate_sampling
 except ImportError:
     from data_loading import load_datasets, RANDOM_STATE, DEFAULT_DATA_DIR
     from eda import (

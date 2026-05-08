@@ -8,7 +8,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 try:
-    from src.data_loading import RANDOM_STATE
+    from src import RANDOM_STATE
 except ImportError:
     from data_loading import RANDOM_STATE
 

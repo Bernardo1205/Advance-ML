@@ -11,7 +11,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, f1_score
 
 try:
-    from src.data_loading import RANDOM_STATE
+    from src import RANDOM_STATE
 except ImportError:
     from data_loading import RANDOM_STATE
 
