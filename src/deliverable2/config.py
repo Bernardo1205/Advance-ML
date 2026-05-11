@@ -1,6 +1,6 @@
 RANDOM_STATE = 42
 
-DATA_PATH = "cirrhosis.csv"
+DATA_PATH = "datasets/cirrhosis.csv"
 
 TARGET_COLUMN = "Status"
 
